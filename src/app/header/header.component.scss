@@ -190,7 +190,7 @@
     margin-bottom: 0;
 }
 .menu__list  li a{
-    padding: 19px 25px;
+    padding: 18px 25px;
     display: block;
     text-transform: uppercase;
     color: var(--text-color);
@@ -201,7 +201,7 @@
     color: #f2600d;
 }
 .search {
-    padding: 19px 25px;
+    padding: 14px 0px;
     margin-bottom: 0;
     display: flex;
 }
@@ -213,7 +213,6 @@
 }
 .menu__list-item {
     position: relative;
-  
 }
 .menu-sub {
     width: 160%;
@@ -222,9 +221,12 @@
     padding: 10px;
     left: -1px;
     display: none;
-    top: 63px;
+    top: 59px;
     position: absolute;
+    background-color: white;
+    z-index: 2;
     animation: show ease 0.15s;
+
 }
 .menu-sub::before {
     content: "";
@@ -313,21 +315,95 @@
     position: block;
 }
 .menu-sub--sub li:hover {
-//    transition: none;
    display: block;
 }
 .search-input {
     font-style: italic;
-    border: none;
     outline: none;
-    text-align: right;
+    width: 123px;
+    border: 0;
+    font-size: 15px;
+    padding: 5px;
+    padding-left: 36%;
+    transition: 0.4s all;
+
 }
-.search-input:hover {
+.search-input:hover,.search-title:focus {
     outline: none;
 }
-.search-title:focus{
-    outline: none;
+
+.search-input:focus {
+    padding-left: 5%;
 }
 .search-title:focus .search-input{
     outline: none;
+}
+button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+// .owl-carousel .owl-nav button.owl-prev {
+//     background: rgba(0, 0, 0, 0.5) 0 0;
+//     opacity: 0.6;
+//     left: -55px;
+//     width: 38px;
+//     height: 38px;
+//     line-height: 35px;
+//     position: absolute;
+//     border: none;
+//     border-radius: 50%;
+//     margin-top: 35px;
+// }
+// .carousel-img {
+//     height: 500px;
+//     background-size: contain;
+// }
+.bg-white {
+    height: 400px;
+    background-color:white;
+}
+.slide__list-image {
+    width: 257px;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 257px;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 4px solid #fff;
+    box-shadow: 1px 1px 6px #4e4e4e;
+}
+.slide-item {
+    width: 25%;
+    font-family: 'Trirong', serif;
+}
+.slide__title-first {
+    padding: 10px;
+    text-align: center;
+}
+.slide__title-second {
+    padding: 0 10px;
+    text-align: center;
+    font-weight: 700;
+    color: black;
+}
+.slide__para {
+    padding: 0 10px;
+    font-weight: 600;
+    text-align: center;
+    color: #888888;   
+}
+.slide__list {
+    position: relative;
+   margin: 0 auto;
+   max-width: 1140px;
+   
+}
+.slide__content {
+    display: flex;
+    top: -112px;
+    position: absolute;
+  
 }
