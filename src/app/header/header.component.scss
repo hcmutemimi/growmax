@@ -377,23 +377,26 @@ button {
 }
 .slide-item {
     width: 25%;
-    font-family: 'Trirong', serif;
+}
+.slide-item:hover {
+    transform: transformY(-5px);
 }
 .slide__title-first {
     padding: 10px;
     text-align: center;
 }
 .slide__title-second {
-    padding: 0 10px;
+    padding: 0 8px;
     text-align: center;
     font-weight: 700;
     color: black;
 }
 .slide__para {
-    padding: 0 10px;
+    padding: 0 8px;
     font-weight: 600;
     text-align: center;
     color: #888888;   
+    font-size: 15px;
 }
 .slide__list {
     position: relative;
@@ -406,4 +409,13 @@ button {
     top: -112px;
     position: absolute;
   
+}
+.slide__item-wrapper {
+    position: relative;
+    font-family: 'Trirong', serif;
+    transition: transform ease-in 0.2s;
+    will-change: transform;
+}
+.slide__item-wrapper:hover {
+    transform: translateY(-8px);
 }
