@@ -1,7 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.css';
 @import '~font-awesome/scss/font-awesome';
-@import "~bootstrap/dist/css/bootstrap.css";
-:root{
+:root {
     --main-color: #97c505;
     --bg-gray-color: #f2f2f2;
     --text-color: #666666;
